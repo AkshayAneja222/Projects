@@ -1,0 +1,32 @@
+method     API							Returns
+
+Get       /Connect4/game/allMatches				All the games
+Get       /Connect4/game/start					Token, Ready
+Get	  /Connect4/game/start/{token}/{user}/{column}		Valid/ InValid/ Winner/ Draw
+Get	  /Connect4/game/start/{token}/allMoves			All the moves in single game
+
+
+
+1. To start a match: /Connect4/game/start  this will return token
+
+2. To make a valid move:
+	
+	a. for yellow : /Connect4/game/start/{token}/Yellow/4, 4 is a column there can be any digit from 	1 to 7. Else invalid will be returned. Yellow should played odd move whereas Red will play even.
+
+	b. for red : /Connect4/game/start/{token}/Red/3
+
+	c. users are case sensitive, token for both players will be same for that particular game.
+
+	4. this will return valid/ invalid/ winner/ draw.
+
+3. To get all the moves played till then for that particular game. 
+	use : /Connect4/game/start/{token}/allMoves	
+	where {token} is the token value.
+	JSON result.
+
+4. To get all the match that are played since the application has initialized
+	use: /Connect4/game/allMatches
+	JSON result.
+
+H2 Database is used, which is a in-memory database. 
+http://localhost:8080/Connect4/game/start

@@ -1,0 +1,5 @@
+
+1. Apache is required to deploy war.
+2. Just copy the war file(Connect4.war) and paste into WebApps folder of Apache.
+3. run bin/Startup.bat
+4. logs could be seen like "war deployed"
