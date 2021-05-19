@@ -1,0 +1,56 @@
+input[type="button"]:active{ 
+  background-color: white;
+  transform: translateY(4px);
+}
+
+input[type="button"]{
+  margin: 5px;
+  padding: 25px 36px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+}
+
+.screen-row input{ 
+  width: 400px; 
+background: #ddd;
+border: 0px; 
+color: #222; 
+padding: 10px; 
+text-align: right; 
+} 
+
+.mainCalc{
+  box-sizing: border-box; 
+} 
+
+.calculator-title{ 
+  font-size:4 0px; 
+  background: #fff; 
+  width: 400px; 
+  padding: 10px 10px; 
+  margin: 0 auto; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 2px; 
+  border: 2px solid black; 
+  color: black; 
+} 
+
+
+*{ 
+  margin:0px; 
+  padding:0px; 
+  border-radius: 0px;
+  font-size: 110%; 
+} 
+
+#root{ 
+  text-align:center; 
+}

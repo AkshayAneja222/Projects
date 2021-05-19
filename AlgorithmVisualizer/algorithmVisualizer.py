@@ -32,7 +32,7 @@ def insertionSort(win,x,y,width,height):
     for i in range(1,len(height)):
         key=height[i]
         j=i-1
-        while height[j]>key and j>=0:
+        while j>=0 and height[j]>key:
             height[j+1]=height[j]
             j-=1
         height[j+1]=key
